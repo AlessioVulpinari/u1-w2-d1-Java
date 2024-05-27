@@ -24,7 +24,7 @@ public class Main {
                 input = Integer.parseInt(scanner.nextLine());
                 if (input <= arrayOfNum.length && input >= 0) {
                     num = input;
-                    System.out.println(arrayOfNum[num - 1]);
+                    if (num > 0) System.out.println(arrayOfNum[num - 1]);
                 }
             } catch (InputMismatchException | NumberFormatException err) {
                 System.out.println("Inserisci un numero!");
